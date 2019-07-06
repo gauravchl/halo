@@ -1,0 +1,23 @@
+{
+  "name": "eve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --out releases --overwrite --files=[images/*] --icon=build/icon.icns"
+  },
+  "keywords": [],
+  "author": "Gaurav Chikhale <mail@gauravchl.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "5.0.6",
+    "electron-packager": "14.0.1",
+    "electron-reload": "1.4.0"
+  },
+  "dependencies": {
+    "menubar": "6.0.6",
+    "node-notifier": "5.4.0",
+    "scraperjs": "1.2.0"
+  }
+}

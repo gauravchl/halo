@@ -2,7 +2,10 @@ const { menubar } = require("menubar");
 const path = require("path");
 const eve = require("./eve.js");
 const ipc = require('electron').ipcMain;
+const storage = require('electron-json-storage');
+
 const imagesPath = path.join(__dirname, "images");
+
 const interval = 0.05; // In Minutes
 
 
@@ -46,4 +49,15 @@ ipc.on('closeApp', function(event, data){
 ipc.on('showMessage', function(event, data){
   eve.showMessage();
   mb.window.hide();
+});
+
+ipc.on('updateInterval', function(event, interval){
+  console.log(interval);
+  storage.set('interval', {minutes: interval})
+});
+
+ipc.on('getInterval', function(event){
+  storage.get('interval', (err, data) => {
+    event.returnValue = data.minutes;
+  });
 });

@@ -16,6 +16,7 @@
     "electron-reload": "1.4.0"
   },
   "dependencies": {
+    "electron-json-storage": "^4.1.6",
     "menubar": "6.0.6",
     "scraperjs": "1.2.0"
   }

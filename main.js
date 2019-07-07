@@ -9,7 +9,7 @@ const interval = 0.05; // In Minutes
 const mb = menubar({
   browserWindow: {
     width: 200,
-    height: 200,
+    height: 172,
     webPreferences: {
       nodeIntegration: true
     },
@@ -29,8 +29,8 @@ mb.on("ready", function ready() {
   });
 
   mb.tray.on("click", () => {
-    setIcon("hidden.png");
-    eve.showMessage();
+    //setIcon("hidden.png");
+
   });
 });
 
@@ -40,6 +40,10 @@ const setIcon = img => {
 };
 
 ipc.on('closeApp', function(event, data){
-  console.log("Response received")
   mb.app.quit();
+});
+
+ipc.on('showMessage', function(event, data){
+  eve.showMessage();
+  mb.window.hide();
 });

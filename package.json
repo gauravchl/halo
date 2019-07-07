@@ -2,7 +2,7 @@
   "name": "eve",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . --out releases --overwrite --files=[images/*] --icon=build/icon.icns"

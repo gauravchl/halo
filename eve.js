@@ -5,7 +5,7 @@ const imagesPath = path.join(__dirname, 'images')
 
 const eve = {
   showMessage: async () => {
-    const { emoji, text } = await scrapeTweet('tinycarebot');
+    const { emoji, text } = await getTweet();
     const notify = new Notification({
       title: emoji || "Eva",
       body: text,
@@ -15,7 +15,17 @@ const eve = {
   }
 }
 
-const scrapeTweet = async who => {
+
+const getTweet = async () => {
+  const tweets1 = await scrapeTweets('tinycarebot');
+  const tweets2 = await scrapeTweets('selfcare_bot');
+  const tweets = [...tweets1, ...tweets2];
+  console.log(tweets)
+  const tweetNo = Math.floor(Math.random() * tweets.length);
+  return tweets[tweetNo];
+}
+
+const scrapeTweets = async who => {
   const uri = 'https://twitter.com/' + who;
   const scrapeFn = $ => {
     const nodes = $('.js-tweet-text.tweet-text');
@@ -29,8 +39,7 @@ const scrapeTweet = async who => {
   }
 
   const tweets = await scraperjs.StaticScraper.create(uri).scrape(scrapeFn);
-  const tweetNo = Math.floor(Math.random() * tweets.length);
-  return tweets[tweetNo];
+  return tweets
 }
 
 module.exports = eve;

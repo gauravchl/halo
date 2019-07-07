@@ -5,10 +5,10 @@ const imagesPath = path.join(__dirname, 'images')
 
 const eve = {
   showMessage: async () => {
-    const tweet = await scrapeTweet('tinycarebot');
+    const { emoji, text } = await scrapeTweet('tinycarebot');
     const notify = new Notification({
-      title: "EVA",
-      body: tweet,
+      title: emoji || "Eva",
+      body: text,
       closeButtonText: "close"
     });
     notify.show();
@@ -21,8 +21,10 @@ const scrapeTweet = async who => {
     const nodes = $('.js-tweet-text.tweet-text');
     return nodes.map((x, y) => {
       const emoji = $(y).find('img').attr('alt');
-      const text = $(y).text();
-      return emoji + text;
+      let text = $(y).text();
+      text = text.replace(":", "").trim();
+      text = text.charAt(0).toUpperCase() + text.slice(1);
+      return { emoji, text };
     }).get()
   }
 

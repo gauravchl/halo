@@ -12,11 +12,12 @@ const mb = menubar({
     height: 200,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    icon: __dirname + "/build/icon.icns"
   }
 });
 
-eve.showMessage();
+
 // const intervalId = setInterval(() => {
 // }, 1 * 1000)
 
@@ -29,6 +30,7 @@ mb.on("ready", function ready() {
 
   mb.tray.on("click", () => {
     setIcon("hidden.png");
+    eve.showMessage();
   });
 });
 

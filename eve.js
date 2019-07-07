@@ -1,20 +1,17 @@
+const Notification = require('electron').Notification;
 const scraperjs = require('scraperjs');
-const notifier = require('node-notifier');
 const path = require('path');
 const imagesPath = path.join(__dirname, 'images')
 
 const eve = {
   showMessage: async () => {
     const tweet = await scrapeTweet('tinycarebot');
-    notifier.notify({
-    title: "EVA",
-    subtitle: void 0,
-    contentImage: void 0,
-    icon: `${imagesPath}/oh@2x.png`,
-    message: tweet,
-    sound: true,
-    timeout: 30
-  });
+    const notify = new Notification({
+      title: "EVA",
+      body: tweet,
+      closeButtonText: "close"
+    });
+    notify.show();
   }
 }
 

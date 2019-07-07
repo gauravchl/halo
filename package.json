@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "menubar": "6.0.6",
-    "node-notifier": "5.4.0",
     "scraperjs": "1.2.0"
   }
 }

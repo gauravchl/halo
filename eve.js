@@ -20,7 +20,6 @@ const getTweet = async () => {
   const tweets1 = await scrapeTweets('tinycarebot');
   const tweets2 = await scrapeTweets('selfcare_bot');
   const tweets = [...tweets1, ...tweets2];
-  console.log(tweets)
   const tweetNo = Math.floor(Math.random() * tweets.length);
   return tweets[tweetNo];
 }

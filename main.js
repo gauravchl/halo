@@ -10,7 +10,6 @@ const DEFAULT_INTERVAL = 30 //minutes
 const granularity = 30 // InSeconds
 
 setInterval(() => {
-  console.log("Interval")
   storage.get('lastSent', (err, data) => {
     const lastSent = data.value;
     if(!lastSent) {

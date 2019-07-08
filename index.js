@@ -1,5 +1,5 @@
 const ipc = require('electron').ipcRenderer;
-
+const DEFAULT_INTERVAL = 30;
 const exitBtn = document.getElementById('exit-btn');
 const stressBtn = document.getElementById('stress-btn');
 const aboutBtn = document.getElementById('about-btn');
@@ -32,7 +32,7 @@ const updateIntervalText = min => {
 
 
 // Set interval from storage
-const initialInterval = ipc.sendSync('getInterval') || 30;
+const initialInterval = ipc.sendSync('getInterval') || DEFAULT_INTERVAL;
 updateIntervalText(initialInterval)
 intervalBtn.value = initialInterval;
 

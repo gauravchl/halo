@@ -1,11 +1,12 @@
 {
   "name": "halo",
-  "version": "1.0.1",
+  "version": "v1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "release": "build"
   },
   "keywords": [],
   "author": "Gaurav Chikhale <mail@gauravchl.com>",

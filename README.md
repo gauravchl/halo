@@ -3,9 +3,6 @@
 A little bot that tries to take care of you when you're using your Mac. It tells you cute, self care things, and tries not to stress you out.
 
 <img width="284" alt="Screen Shot 2019-07-14 at 1 34 16 AM" src="https://user-images.githubusercontent.com/3471415/61179780-d5800780-a5d7-11e9-8d7a-a6ff678808d9.png">
-<br/>
-<br/>
-<img width="284" alt="Screen Shot 2019-07-14 at 1 34 55 AM" src="https://user-images.githubusercontent.com/3471415/61179781-d5800780-a5d7-11e9-9102-06c7ed217747.png">
 
 #### How to install
 

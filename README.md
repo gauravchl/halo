@@ -2,11 +2,10 @@
 
 A little bot that tries to take care of you when you're using your Mac. It tells you cute, self care things, and tries not to stress you out.
 
-<img width="284" alt="Screen Shot 2019-07-14 at 1 34 16 AM" src="https://user-images.githubusercontent.com/3471415/61179780-d5800780-a5d7-11e9-8d7a-a6ff678808d9.png">
+<img width="484" alt="Screen Shot 2019-07-14 at 1 34 16 AM" src="https://user-images.githubusercontent.com/3471415/61184119-ec464e80-a617-11e9-96c1-a6fc42b7bca9.gif">
 
 #### How to install
-
-- Instructions for installing halo is recorded here https://youtu.be/qdL4G1hdIho, or you can also follow the instructions below.
+  Instructions for installing halo is recorded here https://youtu.be/qdL4G1hdIho, or you can also follow the instructions below.
 
 
 - Go to [release page](https://github.com/gauravchl/halo/releases) and download latest version. eg: [halo-1.0.0.dmg](https://github.com/gauravchl/halo/releases/download/v1.0.0/halo-1.0.0.dmg)

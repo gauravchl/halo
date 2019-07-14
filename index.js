@@ -1,4 +1,5 @@
 const ipc = require('electron').ipcRenderer;
+var shell = require('electron').shell
 const DEFAULT_INTERVAL = 30;
 const exitBtn = document.getElementById('exit-btn');
 const stressBtn = document.getElementById('stress-btn');
@@ -14,7 +15,7 @@ stressBtn.addEventListener('click', () => {
 });
 
 aboutBtn.addEventListener('click', () => {
-  ipc.send('closeApp');
+  shell.openExternal("https://github.com/gauravchl/halo");
 });
 
 intervalBtn.addEventListener('input', (e) => {

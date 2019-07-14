@@ -39,7 +39,7 @@ const updateLastSent = () => {
 const mb = menubar({
   browserWindow: {
     width: 200,
-    height: 172,
+    height: 192,
     webPreferences: {
       nodeIntegration: true
     },

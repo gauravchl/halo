@@ -1,6 +1,6 @@
 const { menubar } = require("menubar");
 const path = require("path");
-const eve = require("./eve.js");
+const halo = require("./halo.js");
 const ipc = require('electron').ipcMain;
 const storage = require('electron-json-storage');
 
@@ -13,7 +13,7 @@ setInterval(() => {
   storage.get('lastSent', (err, data) => {
     const lastSent = data.value;
     if(!lastSent) {
-      eve.showMessage();
+      halo.showMessage();
       updateLastSent();
     } else {
       storage.get('interval', (err, { value: interval}) => {
@@ -21,7 +21,7 @@ setInterval(() => {
         const d1 = Number(new Date());
         const d2 = Number(new Date(lastSent));
         if((d1 - d2) > intervalInMS) {
-          eve.showMessage();
+          halo.showMessage();
           updateLastSent();
         }
       })
@@ -47,20 +47,13 @@ const mb = menubar({
   }
 });
 
-
-// const intervalId = setInterval(() => {
-// }, 1 * 1000)
-
 mb.on("ready", function ready() {
-  setIcon("visible.png");
+  setIcon("icon_20x20@2x.png");
   mb.tray.on("right-click", () => {
-    mb.tray.setImage(`${imagesPath}/oh.png`);
     setTimeout(_ => mb.app.quit(), 500);
   });
 
   mb.tray.on("click", () => {
-    //setIcon("hidden.png");
-
   });
 });
 
@@ -74,7 +67,7 @@ ipc.on('closeApp', function(event, data){
 });
 
 ipc.on('showMessage', function(event, data){
-  eve.showMessage();
+  halo.showMessage();
   mb.window.hide();
 });
 

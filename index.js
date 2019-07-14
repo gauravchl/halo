@@ -25,8 +25,8 @@ intervalBtn.addEventListener('input', (e) => {
 
 
 const updateIntervalText = min => {
-  const time = min >= 60 ? `${min/60} Hour` : `${min} Minutes`;
-  const text = `Interval: ${time}`
+  const time = min >= 60 ? `${min/60} hour` : `${min}min`;
+  const text = `whop whop in every ${time}`
   document.getElementById('interval-label').innerText = text;
 }
 

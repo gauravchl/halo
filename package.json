@@ -1,17 +1,18 @@
 {
-  "name": "eve",
-  "version": "1.0.0",
+  "name": "halo",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --out releases --overwrite --files=[images/*] --icon=build/icon.icns"
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "Gaurav Chikhale <mail@gauravchl.com>",
   "license": "MIT",
   "devDependencies": {
     "electron": "5.0.6",
+    "electron-builder": "^20.44.4",
     "electron-packager": "14.0.1",
     "electron-reload": "1.4.0"
   },
@@ -19,5 +20,13 @@
     "electron-json-storage": "^4.1.6",
     "menubar": "6.0.6",
     "scraperjs": "1.2.0"
-  }
+  },
+  "build": {
+    "icon": "build/icon.icns",
+    "appId": "com.halo.app",
+    "files": ["**/*", "build/icon.*"],
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
+}
 }

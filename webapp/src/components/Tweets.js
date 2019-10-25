@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import tweetsAPI from '../api/tweets'
+import React, { useEffect, useState } from "react";
+import TweetCard from "./tweetCard";
+import tweetsAPI from "../api/tweets";
 
-const Tweets = (props) => {
-
+const Tweets = props => {
   const [tweets, setTweets] = useState();
 
   useEffect(() => {
-    tweetsAPI.get('gauravchl').then(res => {
-      console.log(res);
-      setTweets(res);
+    const who = 'gauravchl';
+    tweetsAPI.get(who).then(res => {
+      setTweets(res.map(t => ({tweet: t, who})));
     });
-  }, [])
+  }, []);
 
-  return (
-    <div>
-    { tweets && tweets.map(t => <p>{t}</p>)}
-    </div>
-  )
+  return <div>{tweets && tweets.map(t => <TweetCard tweet={t} />)}</div>;
+};
 
-}
-
-export default Tweets
+export default Tweets;

@@ -1,0 +1,9 @@
+.root {
+  width: 400px;
+  word-break: break-word;
+  background: #e0e0e0;
+  margin: 12px;
+  border-radius: 4px;
+  padding: 18px;
+  text-align: left;
+}

@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "simple-web-notification": "^1.0.32"
   },
   "scripts": {
     "start": "react-scripts start",

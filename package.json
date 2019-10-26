@@ -20,14 +20,18 @@
   "dependencies": {
     "electron-json-storage": "^4.1.6",
     "menubar": "6.0.6",
-    "scraperjs": "1.2.0"
+    "scraperjs": "1.2.0",
+    "simple-web-notification": "^1.0.32"
   },
   "build": {
     "icon": "build/icon.icns",
     "appId": "com.halo.app",
-    "files": ["**/*", "build/icon.*"],
+    "files": [
+      "**/*",
+      "build/icon.*"
+    ],
     "mac": {
       "category": "public.app-category.productivity"
     }
-}
+  }
 }

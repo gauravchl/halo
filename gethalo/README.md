@@ -4,7 +4,7 @@ Fonts from Google Fonts: included on site are:
 - Open Sans
 - Fredoka One
 
-# Halo
+## Halo
 
 A little bot that looks our for you with kind reminders when you need them.
 

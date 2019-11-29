@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*@import "../bulma/bulma.sass";*/
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,600&display=swap');
+
+// Set your brand colors
+$blue: #9EE1FF;
+$coral: #FF8A7A;
+$coral-dark: #E86F60;
+$blue-dark: #162126;
+$blue-lighter: #DDF5FF;
+
+// Update Bulma's global variables
+$family-sans-serif: "Open Sans", sans-serif;
+$family-secondary: "Fredoka One", cursive;
+$grey-dark: $blue-dark;
+$grey-light: $blue-dark;
+$primary: $blue;
+$secondary: $coral;
+$link: $coral;
+$link-hover: $coral-dark;
+$link-hover-border: $coral-dark;
+$footer-color: true;
+$scheme-main-bis: $blue;
+
+// Update some of Bulma's component variables
+$footer-color: $scheme-main-bis;
+$button-background-color: $coral;
+$body-background-color: $blue-lighter;
+$input-border-color: transparent;
+$input-shadow: none;
+.has-bg-img { background: url('/assets/images/img.jpg')center center; background-size:cover; }
+
+// Import only what you need from Bulma
+@import "../bulma/sass/utilities/_all.sass";
+@import "../bulma/sass/base/_all.sass";
+@import "../bulma/sass/elements/button.sass";
+@import "../bulma/sass/elements/container.sass";
+@import "../bulma/sass/elements/title.sass";
+@import "../bulma/sass/form/_all.sass";
+@import "../bulma/sass/components/navbar.sass";
+@import "../bulma/sass/layout/hero.sass";
+@import "../bulma/sass/layout/section.sass";

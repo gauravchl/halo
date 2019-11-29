@@ -1,0 +1,44 @@
+
+.gif-height {
+    height: 48vh;
+}
+
+
+/****** media ********/
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.has-gif {
+  min-width: 32rem;
+  width: 64rem;
+  max-width: 64rem;
+}
+
+.smile {
+  width: 10rem;
+}
+
+.responsive {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 100%;
+  height: auto;
+}
+
+.text-padding {
+  padding-left: 3rem;
+}
+li{
+  margin: 3rem 0;
+}
+footer{
+  background-color: #9EE1FF !important;
+  padding: 2rem 1rem 4rem !important;
+}
+
+.box {
+  padding: 0.8rem;
+  background-color: #F9F9F9;
+  border-radius: 1rem !important;
+}

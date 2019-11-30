@@ -1,18 +1,14 @@
 
-.gif-height {
-    height: 48vh;
+.featured {
+  background-color: #1C3540;
+  color: #DDF5FF;
+  padding: .8rem;
+
 }
-
-
 /****** media ********/
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
-}
-.has-gif {
-  min-width: 32rem;
-  width: 64rem;
-  max-width: 64rem;
 }
 
 .smile {

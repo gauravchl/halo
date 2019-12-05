@@ -1,10 +1,24 @@
-
 .featured {
   background-color: #1C3540;
   color: #DDF5FF;
   padding: .8rem;
+}
+
+.height {
+  height:100%;
+}
+.box-outer {
+  float: right;
 
 }
+
+.box {
+  width: 23rem;
+  padding: 0.8rem;
+  background-color: #F9F9F9;
+  border-radius: 1rem !important;
+}
+
 /****** media ********/
 .hero {
   background-size: cover;
@@ -25,16 +39,12 @@
 .text-padding {
   padding-left: 3rem;
 }
-li{
+
+li {
   margin: 3rem 0;
 }
-footer{
+
+footer {
   background-color: #9EE1FF !important;
   padding: 2rem 1rem 4rem !important;
-}
-
-.box {
-  padding: 0.8rem;
-  background-color: #F9F9F9;
-  border-radius: 1rem !important;
 }

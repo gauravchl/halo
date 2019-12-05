@@ -42,3 +42,8 @@ footer{
   background-color: #F9F9F9;
   border-radius: 1rem !important;
 }
+
+// family-secondary class is not defined in current version we are using :/
+.is-family-secondary {
+  font-family: "Fredoka One", cursive;
+}

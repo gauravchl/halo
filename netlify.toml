@@ -1,0 +1,3 @@
+[build]
+  base = "gethalo"
+  command = "npm run css-build"

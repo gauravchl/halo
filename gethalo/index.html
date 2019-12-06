@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9EE1FF" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>HALO</title>
+    <!-- Style Sheets ------->
+    <link rel="stylesheet" href="css/mystyles.css">
+    <!-- Fade in Plug-in ------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
 
-<head>
-  <link rel="icon" href="gethalo/favicon.png">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HALO</title>
-  <!-- favicon -->
-
-  <!-- Primary Meta Tags -->
-  <title>HALO — Free Desktop App</title>
-  <meta name="title" content="HALO — Free Desktop App">
-  <meta name="description" content="A little bot that looks out for you with kind reminders when you need them.">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://metatags.io/">
-  <meta property="og:title" content="HALO — Free Desktop App">
-  <meta property="og:description" content="A little bot that looks out for you with kind reminders when you need them.">
-  <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://metatags.io/">
-  <meta property="twitter:title" content="HALO — Free Desktop App">
-  <meta property="twitter:description" content="A little bot that looks out for you with kind reminders when you need them.">
-  <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-  <!-- Style Sheets ------->
-  <link rel="stylesheet" href="bulma/css/bulma.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/custom.css" />
-  <!-- Fade in Plug-in ------->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="/Users/silviafuen/git/halo/gethalo/slider.js"></script>
-</head>
-
-<body>
-  <!-- Product Hunt Mention ------------------------------------------------------------->
-  <div class="">
-    <nav class="level featured">
-      <p class="level-item has-text-centered">
-        <a href="https://www.producthunt.com/posts/halo-5">
-          <b>Check out our feature on Product Hunt 😺</b>
-          <img src="/Users/silviafuen/git/halo/gethalo/assets/pholder.png" alt="" style="height: 32px;">
-        </a>
-      </p>
+  <body>
+    <!-- Navigation ------------------------------------------------------------->
+    <nav
+      class="navbar is-spaced is-primary is-hidden-mobile"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-family-secondary" href="#install">
+            How to Install
+          </a>
+        </div>
+      </div>
     </nav>
   </div>
   <!-- Navigation ------------------------------------------------------------->
@@ -91,19 +70,27 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="hero-body">
-      <h1 class="title is-1 is-family-secondary">
-        <img class="smile" alt="A yellow face with smiling eyes, closed smile, and halo," src="assets/smiling-face-halo.png" /><br />
-        Halo
-      </h1>
-      <p class="subtitle">
-        A little bot that looks out for you with kind reminders when you need
-        them.
-      </p>
-      <div class="content">
-        <a class="button is-rounded is-centered is-medium is-link" href="https://github.com/gauravchl/halo/releases/download/v1.0.0/halo-1.0.0-mac.zip">Download for mac</a>
-        <br />
+      <div class="hero-body">
+        <h1 class="title is-1 is-family-secondary">
+          <img
+            class="smile"
+            alt="A yellow face with smiling eyes, closed smile, and halo,"
+            src="assets/smiling-face-halo.png"
+          /><br />
+          Halo
+        </h1>
+        <p class="subtitle">
+          A little bot that looks out for you with kind reminders when you need
+          them.
+        </p>
+        <div class="content">
+          <a
+            class="button is-rounded is-centered is-medium"
+            href="https://github.com/gauravchl/halo/releases/download/v1.0.0/halo-1.0.0-mac.zip"
+            >Download for mac</a
+          >
+          <br />
+        </div>
       </div>
     </div>
   </section>
@@ -137,41 +124,47 @@
           </ol>
         </div>
       </div>
-      <div class="columns content">
-        <div class="column is-12">
-          <p>
-            If you see a message like: “halo” can’t be opened because it is
-            from an unidentified developer. You will have to allow your mac to
-            open the app downloaded from other than app store. To allow mac to
-            open the app go to <b>System Preferences</b> ->
-            <b>Security & Privacy</b> -> then click Open on blocked app.
-          </p>
-        </div>
+    </section>
+
+    <!-- Footer ------------------------------------------------------------->
+    <div
+      class=""
+      style="background: url('assets/wave-footer.svg'); background-size: cover;
+  background-repeat: no-repeat; height: 16rem;"
+    ></div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p class="">
+          HALO was created by
+          <a href="https://gauravchl.com">Gaurav Chikhale</a> and is
+          inspired by 💖
+          <a href="https://github.com/notwaldorf/tiny-care-terminal"
+            >tinyCareTerminal</a
+          >, a creation of
+          <a href="https://twitter.com/notwaldorf">Monica Dinculescu</a>
+        </p>
+        <p>
+          Page design by
+          <a href="https://twitter.com/silviafuen">Silvia Fuentes</a>
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
 
-  <!-- Footer ------------------------------------------------------------->
-  <div class="" style="background: url('assets/wave-footer.svg'); background-size: cover;
-  background-repeat: no-repeat; height: 16rem;"></div>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p class="">
-        HALO was created by
-        <a href="https://github.com/gauravchl/halo">Gaurav Chikhale</a> and is
-        inspired by 💖
-        <a href="https://github.com/notwaldorf/tiny-care-terminal">tinyCareTerminal</a>, a creation of
-        <a href="https://twitter.com/notwaldorf">Monica Dinculescu</a>
-      </p>
-      <p>
-        Page design by
-        <a href="https://twitter.com/silviafuen">Silvia Fuentes</a>
-      </p>
-    </div>
-  </footer>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-43397380-11"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-43397380-11");
+    </script>
+  </body>
 </html>

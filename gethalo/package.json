@@ -1,0 +1,20 @@
+{
+  "name": "gethalo",
+  "version": "1.0.0",
+  "description": "This page was developed using a [Bulma framework](https://bulma.io/) and custom SASS elements. Fonts from Google Fonts: included on site are: - Open Sans - Fredoka One",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "concurrently \"npm run css-watch\" \"http-server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "concurrently": "^5.0.0",
+    "http-server": "^0.12.0",
+    "node-sass": "^4.13.0"
+  }
+}

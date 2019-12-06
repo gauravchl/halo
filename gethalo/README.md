@@ -4,6 +4,12 @@ Fonts from Google Fonts: included on site are:
 - Open Sans
 - Fredoka One
 
+## How to start
+
+- cd into `/gethalo`
+- Run `npm install` if running app first time.
+- Now simply run `npm start` and navigate browser to `http://127.0.0.1:8080/`
+
 ## Halo
 
 A little bot that looks our for you with kind reminders when you need them.

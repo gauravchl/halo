@@ -1,5 +1,4 @@
 @charset "utf-8";
-/*@import "../bulma/bulma.sass";*/
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,600&display=swap');
@@ -27,18 +26,13 @@ $scheme-main-bis: $blue;
 // Update some of Bulma's component variables
 $footer-color: $scheme-main-bis;
 $button-background-color: $coral;
+$button-color: #fff;
+$button-hover-color: #fff;
 $body-background-color: $blue-lighter;
 $input-border-color: transparent;
 $input-shadow: none;
 .has-bg-img { background: url('/assets/images/img.jpg')center center; background-size:cover; }
 
 // Import only what you need from Bulma
-@import "../bulma/sass/utilities/_all.sass";
-@import "../bulma/sass/base/_all.sass";
-@import "../bulma/sass/elements/button.sass";
-@import "../bulma/sass/elements/container.sass";
-@import "../bulma/sass/elements/title.sass";
-@import "../bulma/sass/form/_all.sass";
-@import "../bulma/sass/components/navbar.sass";
-@import "../bulma/sass/layout/hero.sass";
-@import "../bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/bulma.sass";
+@import "custom.scss";

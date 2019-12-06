@@ -48,3 +48,14 @@ footer {
   background-color: #9EE1FF !important;
   padding: 2rem 1rem 4rem !important;
 }
+
+.box {
+  padding: 0.8rem;
+  background-color: #F9F9F9;
+  border-radius: 1rem !important;
+}
+
+// family-secondary class is not defined in current version we are using :/
+.is-family-secondary {
+  font-family: "Fredoka One", cursive;
+}

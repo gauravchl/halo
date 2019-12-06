@@ -27,3 +27,12 @@ A little bot that tries to take care of you when you're using your Mac. It tells
 #### Inspiration
 
 HALO is inspired by 💖 [tinyCareTerminal](https://github.com/notwaldorf/tiny-care-terminal),  a creation of [Monica Dinculescu](https://twitter.com/notwaldorf).
+
+
+
+TODO
+ - Update gaurav chikhale link
+ - Add favicon
+ - Product hunt ups/ github stars / github link
+ - Setup google analytics
+ 

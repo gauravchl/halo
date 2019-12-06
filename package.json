@@ -25,9 +25,12 @@
   "build": {
     "icon": "build/icon.icns",
     "appId": "com.halo.app",
-    "files": ["**/*", "build/icon.*"],
+    "files": [
+      "**/*",
+      "build/icon.*"
+    ],
     "mac": {
       "category": "public.app-category.productivity"
     }
-}
+  }
 }

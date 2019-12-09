@@ -35,18 +35,21 @@
 </head>
 
 <body>
-  <!-- Product Hunt Feature ------------------------------------------------------------->
-  <div class="featured container is-fullhd">
-    <nav class="level featured">
-      <p class="level-item has-text-centered">
-        <a href="https://www.producthunt.com/posts/halo-5">
-          <b>Check out our feature on Product Hunt </b>
-      </p>
-    </nav>
-  </div>
+  <!-- Product Hunt Feature --------------------------------------------------->
+  <nav class="featured">
+    <div class="container">
+      <div class="level">
+        <div class="level-item has-text-centered">
+          <p>
+            <a href="https://www.producthunt.com/posts/halo-5">
+              <b>As seen on Product Hunt! 😺</b></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- Navigation ------------------------------------------------------------->
   <nav class="navbar is-spaced is-primary" role="navigation" aria-label="main navigation">
-    <br />
     <div id="" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item is-family-secondary has-text-grey-dark" href="#install">
@@ -55,15 +58,18 @@
       </div>
     </div>
   </nav>
-  <!-- Hero ------------------------------------------------------------->
+
   <section class="hero is-small is-primary has-text-centered">
     <div class="section">
-      <div class="container">
+      <!-- HALO Preview message ----------------------------------------------->
+      <div class="container is-mobile">
         <div class="columns">
-          <div class="column is-8 height"></div>
-          <div class="column is-4">
+          <div class="column is-1">
+
+          </div>
+          <div class="column is-11 has-text-right is-mobile">
             <div class="box-outer">
-              <div class="box" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1400" data-aos-duration="400">
+              <div class="box" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1600" data-aos-duration="400">
                 <article class="media">
                   <div class="media-left">
                     <figure class="image is-64x64">
@@ -84,6 +90,7 @@
           </div>
         </div>
       </div>
+      <!-- Hero ------------------------------------------------------------->
       <div class="container">
         <div class="hero-body">
           <h1 class="title is-1 is-family-secondary has-text-grey-dark">
@@ -102,6 +109,7 @@
       </div>
     </div>
   </section>
+
   <div class="" style="background: url('assets/wave-header.svg'); background-size: cover;
   background-repeat: no-repeat; height: 16rem;"></div>
 
@@ -114,13 +122,23 @@
           <h2 class="is-family-secondary title is-2">How to Install</h2>
         </div>
       </div>
-      <div class="columns">
-        <div class="column">
-          <figure class="image is-16by9">
-            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube-nocookie.com/embed/qdL4G1hdIho?start=87" frameborder="0" allowfullscreen></iframe>
-          </figure>
+    </div>
+    <div class="container">
+      <div class="columns content">
+        <div class="column is-6">
+          <img src="assets/metadata.png">
+          <!--figure class="image is-16by9">
+              <iframe
+                class="has-ratio"
+                width="640"
+                height="360"
+                src="https://www.youtube-nocookie.com/embed/qdL4G1hdIho?start=87"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </figure-->
         </div>
-        <div class="column is-5">
+        <div class="column is-6">
           <ol class="subtitle is-5" type="I">
             <li><a href="">Download the latest version Halo</a></li>
             <li>
@@ -133,58 +151,35 @@
         </div>
       </div>
     </div>
-
-    <!--div class="container">
-      <div class="columns has-text-centered">
-        <div class="column is-12 if-half">
-          <h2 class="is-family-secondary title is-2">How to Install</h2>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="columns content">
-        <div class="column is-7">
-          <figure class="image is-16by9">
-            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube-nocookie.com/embed/qdL4G1hdIho?start=87" frameborder="0" allowfullscreen></iframe>
-          </figure>
-        </div>
-        <div class="column is-5">
-
-        </div>
-      </div>
-    </div-->
   </section>
 
   <!-- Footer ------------------------------------------------------------->
   <div class="" style="background: url('assets/wave-footer.svg'); background-size: cover;
   background-repeat: no-repeat; height: 16rem;"></div>
-  <footer class="footer container is-fullhd">
-    <nav class="level">
-      <div class="level-item has-text-left">
-        <div>
-          <p class="">
+  <footer class="footer">
+    <div class="content">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p>
             HALO was created by
             <a href="https://gauravchl.com">Gaurav Chikhale</a>
-          </p>
-          <p>
+            <br />
             Page design by
             <a href="https://twitter.com/silviafuen">Silvia Fuentes</a>
-          </p>
-          <p>
-          💖inspired by
+            </br>
+            💖inspired by
             <a href="https://github.com/notwaldorf/tiny-care-terminal">tinyCareTerminal</a>, a creation of
             <a href="https://twitter.com/notwaldorf">Monica Dinculescu</a>
           </p>
         </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-      <div class="level-item has-text-right">
-        <div>
-          <a href="https://www.producthunt.com/posts/halo-5?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-halo-5" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163363&theme=dark" alt="Halo - A little bot that tries to take care of you on Mac | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+        <div class="column has-text-right is-flex-mobile">
+          <div>
+            <a href="https://www.producthunt.com/posts/halo-5?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-halo-5" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163363&theme=dark" alt="Halo - A little bot that tries to take care of you on Mac | Product Hunt Embed"
+                style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
   </footer>
   <script>
     AOS.init();

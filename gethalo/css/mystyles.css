@@ -6837,3 +6837,9 @@ footer {
 .image.is-1by3 .has-ratio {
   height: 100%;
   width: 100%; }
+
+.yt-container {
+  margin-top: 112px; }
+
+.yt-iframe {
+  width: 100%; }

@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bulma": "^0.7.2",
     "concurrently": "^5.0.0",
     "http-server": "^0.12.0",
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }

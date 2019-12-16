@@ -1,108 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,600&display=swap');
 
-.box-outer {
-  float: right;
-}
 
-.box {
-  width: 23rem;
-  padding: 0.8rem;
-  background-color: #F9F9F9;
-  border-radius: 1rem !important;
-}
-/****** media ********/
-.hero {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+$blue: #9EE1FF;
+$coral: #FF8A7A;
+$coral-dark: #E86F60;
+$blue-dark: #162126;
+$blue-feature: #1C3540;
+$blue-lighter: #DDF5FF;
+$font-family-fredoka: "Fredoka One", cursive;
 
-.smile {
-  width: 10rem;
-}
+$theme-colors: (
+  "primary": $coral,
+  "blue": $blue,
+  "blue-dark": $blue-dark,
+  "blue-feature": $blue-feature,
+  "blue-lighter": $blue-lighter,
+  "coral": $coral,
+  "coral-dark": $coral-dark,
+);
 
-.responsive {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  width: 100%;
-  height: auto;
-}
 
-li {
-  margin: 3rem 0;
-}
-
-footer {
-  background-color: #9EE1FF !important;
-  padding: 2rem 1rem 2rem !important;
-}
-
-.box {
-  padding: 0.8rem;
-  background-color: #F9F9F9;
-  border-radius: 1rem !important;
-}
-
-.featured {
-  background-color: #1C3540;
-  color: #DDF5FF;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-// family-secondary class is not defined in current version we are using :/
-.is-family-secondary {
-  font-family: "Fredoka One", cursive;
+.font-fredoka {
+  font-family: "Fredoka One", cursive
 }
 
 
-//addition of has-ratio class
 
-.is-overlay, .image.is-square img,
-.image.is-square .has-ratio, .image.is-1by1 img,
-.image.is-1by1 .has-ratio, .image.is-5by4 img,
-.image.is-5by4 .has-ratio, .image.is-4by3 img,
-.image.is-4by3 .has-ratio, .image.is-3by2 img,
-.image.is-3by2 .has-ratio, .image.is-5by3 img,
-.image.is-5by3 .has-ratio, .image.is-16by9 img,
-.image.is-16by9 .has-ratio, .image.is-2by1 img,
-.image.is-2by1 .has-ratio, .image.is-3by1 img,
-.image.is-3by1 .has-ratio, .image.is-4by5 img,
-.image.is-4by5 .has-ratio, .image.is-3by4 img,
-.image.is-3by4 .has-ratio, .image.is-2by3 img,
-.image.is-2by3 .has-ratio, .image.is-3by5 img,
-.image.is-3by5 .has-ratio, .image.is-9by16 img,
-.image.is-9by16 .has-ratio, .image.is-1by2 img,
-.image.is-1by2 .has-ratio, .image.is-1by3 img,
-.image.is-1by3 .has-ratio, .modal, .modal-background, .hero-video {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.image.is-square img,
-.image.is-square .has-ratio, .image.is-1by1 img,
-.image.is-1by1 .has-ratio, .image.is-5by4 img,
-.image.is-5by4 .has-ratio, .image.is-4by3 img,
-.image.is-4by3 .has-ratio, .image.is-3by2 img,
-.image.is-3by2 .has-ratio, .image.is-5by3 img,
-.image.is-5by3 .has-ratio, .image.is-16by9 img,
-.image.is-16by9 .has-ratio, .image.is-2by1 img,
-.image.is-2by1 .has-ratio, .image.is-3by1 img,
-.image.is-3by1 .has-ratio, .image.is-4by5 img,
-.image.is-4by5 .has-ratio, .image.is-3by4 img,
-.image.is-3by4 .has-ratio, .image.is-2by3 img,
-.image.is-2by3 .has-ratio, .image.is-3by5 img,
-.image.is-3by5 .has-ratio, .image.is-9by16 img,
-.image.is-9by16 .has-ratio, .image.is-1by2 img,
-.image.is-1by2 .has-ratio, .image.is-1by3 img,
-.image.is-1by3 .has-ratio {
-  height: 100%;
-  width: 100%;
-}
-
-
-.yt-container {
-  margin-top: 112px;
-}
-.yt-iframe {
-  width: 100%
-}
+@import "../node_modules/bootstrap/scss/bootstrap";

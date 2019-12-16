@@ -1,40 +1,54 @@
 @charset "utf-8";
-
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400,600&display=swap');
-
-// Set your brand colors
-$blue: #9EE1FF;
-$coral: #FF8A7A;
-$coral-dark: #E86F60;
-$blue-dark: #162126;
-$blue-feature: #1C3540;
-
-$blue-lighter: #DDF5FF;
-
-// Update Bulma's global variables
-$family-sans-serif: "Open Sans", sans-serif;
-$family-secondary: "Fredoka One", cursive;
-$grey-dark: $blue-dark;
-$grey-light: $blue-dark;
-$primary: $blue;
-$secondary: $coral;
-$link: $coral;
-$link-hover: $coral-dark;
-$link-hover-border: $coral-dark;
-$footer-color: true;
-$scheme-main-bis: $blue;
-
-// Update some of Bulma's component variables
-$footer-color: $scheme-main-bis;
-$button-background-color: $coral;
-$button-color: #fff;
-
-$body-background-color: $blue-lighter;
-$input-border-color: transparent;
-$input-shadow: none;
-.has-bg-img { background: url('/assets/images/img.jpg')center center; background-size:cover; }
-
-// Import only what you need from Bulma
-@import "../node_modules/bulma/bulma.sass";
 @import "custom.scss";
+
+body {
+  font-size: 1.25rem
+}
+
+.header-container {
+  min-height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .download-btn {
+    background: $coral;
+    border-radius: 32px;
+    &:hover {
+      background: $coral-dark;
+    }
+  }
+  .install-btn {
+    font-family: $font-family-fredoka;
+    color: #000;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+}
+
+
+.install-container {
+  .install-instructions {
+    font-size: 1.25rem;
+    line-height: 52px;
+  }
+}
+
+
+
+
+
+.has-bg-img {
+  background: url("/assets/images/img.jpg") center center;
+  background-size: cover;
+}
+
+.yt-container {
+  margin-top: 112px;
+}
+.yt-iframe {
+  width: 100%;
+}

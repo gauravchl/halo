@@ -14,7 +14,7 @@ Fonts from Google Fonts: included on site are:
 
 A little bot that looks our for you with kind reminders when you need them.
 
-Currently only availble for Mac desktops.
+Currently only available for Mac desktops.
 
 HALO was created by [Gaurav Chikhale ](https://gauravchl.com/)and
 was inspired by 💖 [tinyCareTerminal](https://github.com/notwaldorf/tiny-care-terminal),

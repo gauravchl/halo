@@ -2,7 +2,7 @@
 @import "custom.scss";
 
 body {
-  font-size: 1.25rem
+  font-size: 1.25rem;
 }
 
 .header-container {
@@ -16,6 +16,8 @@ body {
   .download-btn {
     background: $coral;
     border-radius: 32px;
+    color: #fff;
+    padding: 4px 18px;
     &:hover {
       background: $coral-dark;
     }
@@ -29,7 +31,6 @@ body {
   }
 }
 
-
 .install-container {
   .install-instructions {
     font-size: 1.25rem;
@@ -37,18 +38,45 @@ body {
   }
 }
 
-
-
-
-
-.has-bg-img {
-  background: url("/assets/images/img.jpg") center center;
-  background-size: cover;
-}
-
 .yt-container {
   margin-top: 112px;
 }
 .yt-iframe {
   width: 100%;
+}
+
+.notification {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 12px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all .4s;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+
+  img {
+    margin-right: 22px;
+    width: 58px;
+  }
+
+  p {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
+    white-space: pre-line;
+  }
+
+  &.hide {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .notification {
+    display: none;
+  }
 }

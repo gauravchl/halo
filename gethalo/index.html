@@ -42,9 +42,6 @@
 
     <!-- Style Sheets ------->
     <link rel="stylesheet" href="css/mystyles.css" />
-    <!-- Fade in Plug-in ------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body class="bg-blue-lighter">
@@ -52,6 +49,17 @@
       <div class="row">
         <div class="col-12 header-container">
           <a href="#install" class="install-btn btn"> How to Install</a>
+
+          <div class="notification hide">
+            <img
+              alt="A yellow face with smiling eyes, closed smile, and halo,"
+              src="assets/smiling-face-halo.png"
+            />
+            <p>👪
+              No matter what, you are needed.
+            </p>
+          </div>
+
           <img
             class="smile mt-5"
             alt="A yellow face with smiling eyes, closed smile, and halo,"
@@ -147,16 +155,32 @@
             ><img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=163363&theme=dark"
               alt="Halo - A little bot that tries to take care of you on Mac | Product Hunt Embed"
-              style="width: 250px; height: 54px;"
-              width="250px"
+              style="width: 180px; height: 54px;"
+              width="180px"
               height="54px"
           /></a>
         </div>
       </div>
     </div>
 
+
     <script>
-      AOS.init();
+
+      var msgs = [
+        '👪\n No matter what, you are needed.',
+        '💜\n Dont forget to ask for help if you need',
+        '🌳\n Take a deep breath please',
+        '🌺\n Please remember to look at the sky',
+        '💧\n Please drink some water',
+      ];
+      // Get random message
+      var msg = msgs[Math.floor(Math.random() * msgs.length)]
+
+      // Show Notification after 2 second
+      setTimeout(function() {
+        document.querySelector('.notification p').innerText = msg;
+        document.querySelector('.notification').className = 'notification';
+      }, 2000)
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

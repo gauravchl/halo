@@ -1,3 +1,4 @@
 [build]
   base = "gethalo"
+  publish = "gethalo/"
   command = "npm run css-build"

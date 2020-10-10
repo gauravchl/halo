@@ -9,10 +9,10 @@ const halo = {
     const notify = new Notification({
       title: emoji || "Halo",
       body: text,
-      closeButtonText: "close"
+      closeButtonText: "close",
     });
     notify.show();
-  }
+  },
 };
 
 const getTweet = async () => {
@@ -23,16 +23,14 @@ const getTweet = async () => {
   return tweets[tweetNo];
 };
 
-const scrapeTweets = who => {
+const scrapeTweets = (who) => {
   return new Promise((resolve, reject) => {
     const uri = "https://twitter.com/" + who;
-    const scrapeFn = $ => {
+    const scrapeFn = ($) => {
       const nodes = $(".js-tweet-text.tweet-text");
       return nodes
         .map((x, y) => {
-          const emoji = $(y)
-            .find("img")
-            .attr("alt");
+          const emoji = $(y).find("img").attr("alt");
           let text = $(y).text();
           text = text.replace(":", "").trim();
           text = text.charAt(0).toUpperCase() + text.slice(1);
@@ -40,16 +38,18 @@ const scrapeTweets = who => {
         })
         .get();
     };
-    const tweets = scraperjs.StaticScraper.create(uri).scrape(scrapeFn).then(tweets => {
-      resolve(tweets)
-    }).catch(err => {
-      resolve(TWEETS)
-    });
-  })
+    const tweets = scraperjs.StaticScraper.create(uri)
+      .scrape(scrapeFn)
+      .then((tweets) => {
+        resolve(tweets);
+      })
+      .catch((err) => {
+        resolve(TWEETS);
+      });
+  });
 };
 
 module.exports = halo;
-
 
 // If there is no internet, Will use hardcoded tweets
 const TWEETS = [
@@ -60,11 +60,11 @@ const TWEETS = [
   { emoji: "❤", text: "Please remember to say hi to your friends" },
   {
     emoji: "🏔",
-    text: "Dont forget to rest your eyes and look away from twitter please"
+    text: "Dont forget to rest your eyes and look away from twitter please",
   },
   {
     emoji: "💧",
-    text: "Remember to take a little bit of time to stay hydrated please"
+    text: "Remember to take a little bit of time to stay hydrated please",
   },
   { emoji: "🌿", text: "Please remember to breathe calmly" },
   { emoji: "🙌", text: "Please remember to wiggle your toes" },
@@ -75,60 +75,61 @@ const TWEETS = [
   {
     emoji: "💟",
     text:
-      "Remember to take a quick second to send some messages to your friends please"
+      "Remember to take a quick second to send some messages to your friends please",
   },
   { emoji: "🌿", text: "Get some fresh air please" },
   {
     emoji: "🏔",
     text:
-      "Please dont forget to take a quick second to spend some time outside if you can"
+      "Please dont forget to take a quick second to spend some time outside if you can",
   },
   {
     emoji: "🌿",
-    text: "Dont forget to take a quick break to get some fresh air please"
+    text: "Dont forget to take a quick break to get some fresh air please",
   },
   { emoji: "💟", text: "Please ask for help if you need it" },
   { emoji: "🍃", text: "Please get some fresh air" },
   {
     emoji: "🎧",
     text:
-      "Remember to take a quick second to listen to some music that helps you feel safe please"
+      "Remember to take a quick second to listen to some music that helps you feel safe please",
   },
   { emoji: "💪", text: "Hey! Life is tough, but so are you!" },
   {
     emoji: "📋",
     text:
-      "If you have an action plan to manage any conditions you have, please remember to follow it."
+      "If you have an action plan to manage any conditions you have, please remember to follow it.",
   },
   {
     emoji: "🌄",
     text:
-      "You cannot compare your successes to the apparent achievements of others."
+      "You cannot compare your successes to the apparent achievements of others.",
   },
   { emoji: "💨", text: "Don't forget to breathe." },
   {
     emoji: "💨",
     text:
-      "Is your breathing steady? Maybe try breathing with this gif. http//gph.is/2bComij?tc=1"
+      "Is your breathing steady? Maybe try breathing with this gif. http//gph.is/2bComij?tc=1",
   },
   {
     emoji: "📋",
-    text: "If work is feeling too overwhelming, break it down into little jobs."
+    text:
+      "If work is feeling too overwhelming, break it down into little jobs.",
   },
   {
     emoji: "👍",
     text:
-      "Not sure how to meditate? Maybe download a mindfulness app for your phone!"
+      "Not sure how to meditate? Maybe download a mindfulness app for your phone!",
   },
   {
     emoji: "⏰",
     text:
-      "Have you been waking up early enough lately? Might be time to adjust your sleep schedule."
+      "Have you been waking up early enough lately? Might be time to adjust your sleep schedule.",
   },
   {
     emoji: "🏡",
     text:
-      "Is it possible to open a window? A breeze might make you feel a little brighter."
+      "Is it possible to open a window? A breeze might make you feel a little brighter.",
   },
   { emoji: "💧", text: "Have at least a little sip of water, yeah?" },
   { emoji: "👍", text: "Just keep going! You're doing really well." },
@@ -137,30 +138,30 @@ const TWEETS = [
   { emoji: "🎨", text: "Don't forget to do something creative today." },
   {
     emoji: "🍰",
-    text: "It's okay to treat yourself with your favourite food sometimes."
+    text: "It's okay to treat yourself with your favourite food sometimes.",
   },
   {
     emoji: "💕",
     text:
-      "Everybody needs something a little different. Just be in tune with yourself."
+      "Everybody needs something a little different. Just be in tune with yourself.",
   },
   {
     emoji: "🌲",
-    text: "Have you been outside recently? Go and take a nice, fresh breath."
+    text: "Have you been outside recently? Go and take a nice, fresh breath.",
   },
   {
     emoji: "💤",
     text:
-      "How's your sleep schedule looking? Try to head to bed on time tonight, if you can."
+      "How's your sleep schedule looking? Try to head to bed on time tonight, if you can.",
   },
   {
     emoji: "🚶",
     text:
-      "If you have a moment, maybe go for a nice walk (or head outside for some fresh air, however you can)."
+      "If you have a moment, maybe go for a nice walk (or head outside for some fresh air, however you can).",
   },
   {
     emoji: "🍇",
-    text: "It's really important that you feed yourself, even a little!"
+    text: "It's really important that you feed yourself, even a little!",
   },
-  { emoji: "😀", text: "Make sure you brush your teeth!" }
+  { emoji: "😀", text: "Make sure you brush your teeth!" },
 ];
